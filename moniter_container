@@ -1,3 +1,5 @@
-docker container ls # monitor all containers
+docker container ls -a # monitor all containers
+docker container ls # monitor running containers
+# show id name and command etc 
 docker container top XX # xx is the first two digit of the container's id.
 # watch specific container detail into
