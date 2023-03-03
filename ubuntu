@@ -1,0 +1,2 @@
+docker container run -it ubuntu /bin/bash # docker give /bin/bash command through ubuntu image
+#ubuntu image load bin/bash not systemd, therefore ubuntu image cannot run system command such as systemctl
