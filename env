@@ -1,0 +1,2 @@
+docker container run -env TARGET=google.com diamol/ch03-web-ping
+# give the image a env variable
