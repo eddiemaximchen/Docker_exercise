@@ -1,0 +1,2 @@
+docker container rename A B # A is old B is new
+# sometimes you want a memorable name instead of random name created by docker
