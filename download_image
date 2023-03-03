@@ -1,0 +1,1 @@
+docker container run program_name # if program_name is not in local, docker will try to download in docker hub
