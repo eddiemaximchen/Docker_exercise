@@ -1,0 +1,20 @@
+# Dockerfile instruction order matter 
+# Version 1.0.0
+FROM ubuntu:22.04
+# MAINTAINER is deprecated
+LABEL maintainer="This will show in container info"
+# Set timezone some apache service need to know time zone
+#ENV TZ=Asia/Taipei
+#RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+# Install apache httpd
+RUN apt-get update && apt-get install -y apache2
+#copy leaflet before Dockerfile , i already copy leaflet to html folder /var/www/html is the real path in a ubuntu system
+COPY html/ /var/www/html
+# Expose port tell use this image use port 80
+EXPOSE 80
+# Default startup command
+CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
+
+#Docker build -d service -p assign port number eddie/test image name 1.0 mean a standard version do not skipt this step and let it become latest by default
+docker container run --name myweb1 -d -p 80:80 eddie/test:1.0
+
