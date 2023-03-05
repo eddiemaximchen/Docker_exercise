@@ -1,0 +1,12 @@
+#create env because other computer may not have your env
+docker image pull oepnjdk:17
+#run the env image and rename the env to java_test
+docker container run -i -t --name java_test openjdk:17
+#open another terminal for java_test
+docker container exec -it java_test /bin/bash
+#return to home
+cd
+#upload jar file
+docker container cp TestEmployee.jar java_test:/root
+#execute jar file in jshell
+java -jar TestEmployee.jar
