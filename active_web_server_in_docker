@@ -1,0 +1,2 @@
+# host port 80 to container 80
+docker container run --name webserver -d -p 80:80 nginx
