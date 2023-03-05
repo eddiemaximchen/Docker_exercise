@@ -1,3 +1,4 @@
+# if env does not have interactive mode, do not enter
 #create env because other computer may not have your env
 docker image pull oepnjdk:17
 #run the env image and rename the env to java_test
