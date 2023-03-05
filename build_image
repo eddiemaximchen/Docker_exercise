@@ -15,6 +15,11 @@ EXPOSE 80
 # Default startup command
 CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
 
-#Docker build -d service -p assign port number eddie/test image name 1.0 mean a standard version do not skipt this step and let it become latest by default
+#Docker build  -t means label 1.0 mean a standard version do not skipt this step and let it become latest by default
+docker image build -t eddie/test:1.0 .
+
+#open container -d service -p assign port number eddie/test image name
 docker container run --name myweb1 -d -p 80:80 eddie/test:1.0
 
+#add label in latest it is the same image, will not build agagin. in the second label you have to have multiple image and assign one to be the latest
+docker image build -t eddie/test:latest -t eddie/test:3.0
