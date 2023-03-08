@@ -1,3 +1,5 @@
 docker container exec -it webserver /bin/bash
 find / -name 'index.html' ==> /usr/share/nginx/html/index.html
 docker container cp traveling_with_leaflet/(a folder in user_root) webserver:/usr/share/nginx/html
+#leaflet/ will copy the leaflet folder to the dest
+#if you use /. will copy only things inside the folder
