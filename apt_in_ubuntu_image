@@ -2,3 +2,7 @@ docker container run -it ubuntu /bin/bash
 # do not run systemd, therefore no system side command ex: systemctl
 >> apt-update & apt-upgrade
 >>apt install python3
+>>apt install python3-dev
+>>wget pip.py
+>>apt install pip3
+>>apt install pymysql
