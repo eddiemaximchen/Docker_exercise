@@ -1,0 +1,3 @@
+# need to be root
+ls -ld /var/lib/docker
+# there are  images, containers & container information
