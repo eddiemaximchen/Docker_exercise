@@ -1,2 +1,4 @@
 # for those who do not provide interactive mode, use this way after run container
 docker container exec -it daemon_demo /bin/bash
+exit 
+# will not affect the running container 
