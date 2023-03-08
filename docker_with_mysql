@@ -1,4 +1,5 @@
-in ubuntu container
+# the physical computer must have a fixed ip address, can not be dhcp
+# In my point of view, a docker container has database is only useful when you do parallel run.
 docker image pull mysql
 docker container run -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -v /share:/var/lib/mysql -d --name mysql8 mysql
 #-e MYSQL_ROOT_PASSWORD (env variable only recognize this one)
