@@ -1,1 +1,1 @@
-docker container prot container_name
+docker container port container_name
