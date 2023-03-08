@@ -1,0 +1,3 @@
+docker container run --name daemon_demo -d ubuntu /bin/bash -c "while true; do ec
+ho hello world; sleep 1; done"
+# -c and the container will run the script after -c
