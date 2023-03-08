@@ -11,5 +11,6 @@ root>ls -ld /share/
 #outside of docker
 use workbench and the result will reflect in mysql container
 root>docker container inspect mysql8 | less # find ip of mysql8
+# ubuntu docker do not have ip addr show command
 root>docker container run -it --rm mysql mysql -h 172.17.0.3 -uroot -p
 enter mysql interactive mode
