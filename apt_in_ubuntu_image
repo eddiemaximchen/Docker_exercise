@@ -7,3 +7,4 @@ root>>apt install python3-dev
 root>>apt install pip
 root>>pip install pymysql
 # all the software will disappear when you exit this ubuntu container
+# if you want to keep the downloads use exec and operation in that terminal and exit this terminal
