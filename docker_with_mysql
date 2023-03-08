@@ -1,0 +1,14 @@
+in ubuntu container
+docker image pull mysql
+docker container run -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -v /share:/var/lib/mysql -d --name mysql8 mysql
+#-e MYSQL_ROOT_PASSWORD (env variable only recognize this one)
+#build storage in mysql root is the only user account
+root>mkdir /share
+root>chmod a=rwx,o+t /share/
+#check
+root>ls -ld /share/
+#outside of docker
+use workbench and the result will reflect in mysql container
+root>docker container inspect mysql8 | less # find ip of mysql8
+root>docker container run -it --rm mysql mysql -h 172.17.0.3 -uroot -p
+enter mysql interactive mode
