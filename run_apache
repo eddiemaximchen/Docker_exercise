@@ -1,1 +1,2 @@
 docker run --name web httpd
+# will pause and wait for command, ctrl+c exit 
