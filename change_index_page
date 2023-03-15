@@ -1,0 +1,6 @@
+docker container exec -it web bash 
+ls -l # find htdocs
+cd htdocs
+ls -l # find index.html
+echo Hello volume >index.html
+exit
