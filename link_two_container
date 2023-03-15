@@ -1,0 +1,4 @@
+docker container run --rm --link web busybox wget -q -O - http://web/
+# first, run or start both container
+docker container run --rm --link web busybox wget -q -O - http://web/
+# the result is the web index.html
