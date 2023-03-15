@@ -1,2 +1,2 @@
-# host port 80 to container 80 port forwarding setting only need to do in the first time
+# host port 80 to container 80 port forwarding setting only need to do in the first time, docker start do not need this setting
 docker container run --name webserver -d -p 80:80 nginx
