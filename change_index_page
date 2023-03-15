@@ -4,3 +4,5 @@ cd htdocs
 ls -l # find index.html
 echo Hello volume >index.html
 exit
+in exec terminal the index.html is changed
+but in running terminal the index.html is still the same
