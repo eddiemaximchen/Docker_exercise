@@ -1,1 +1,1 @@
-docker run --name web http
+docker run --name web httpd
