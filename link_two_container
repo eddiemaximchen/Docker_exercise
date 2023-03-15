@@ -3,3 +3,4 @@ docker container run --rm --link web busybox wget -q -O - http://web/
 docker container run --rm --link web busybox wget -q -O - http://web/
 # the result is the web index.html
 # can not use in start, therefore it is a one time only mode
+# the same function as network, but link is more easy to use
