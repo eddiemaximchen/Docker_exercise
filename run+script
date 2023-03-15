@@ -1,0 +1,1 @@
+docker container run --rm busybox whoami  # enter busybox and run command whoami
