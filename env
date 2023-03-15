@@ -1,2 +1,6 @@
 docker container run --env TARGET=google.com diamol/ch03-web-ping
 # give the image a env variable
+#different image have differnet variable
+
+# busybox is a tiny linux
+docker container run --rm -e DB_HOST=mysql busybox
