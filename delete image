@@ -1,1 +1,1 @@
-docker image rm image_id
+docker rm image_id
