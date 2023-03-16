@@ -2,7 +2,7 @@
 version: "3.8"
 #定義 service 的區塊 一個 service 可以啟動多個 courntainer
 service:
-#定義一個叫 npm 的 service
+#定義一個叫 npm 的 service  service 的內容就是 run 
 #stdin_open 是interactive 選項
 npm:
   image: node:14-alpine
