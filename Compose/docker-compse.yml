@@ -13,4 +13,4 @@ npm:
   - .:/source
 
 how to use 
-docker-compose run --rm npm npm -v  #啟動 npm 執行 npm -v 
+docker-compose run --rm npm npm -v  #啟動 npm（有點像select case 寫誰就執行那個 case) 執行 npm -v 
