@@ -1,0 +1,2 @@
+docker run -it -v $PWD:/source -w /source node:14-alpine npm -v
+#$PWD 環境變數 目前目錄  -w 容器下的目錄 前-v 後-v 對掛   node:14-alpine image name npm -v 進入container
