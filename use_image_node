@@ -1,0 +1,2 @@
+docker run -it -v$PWD:/source -w /source node:14-alpine npm -v
+#進入後 執行 npm -v 
