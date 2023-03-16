@@ -1,0 +1,2 @@
+terminal1: docker container start -i myubuntu
+terminal2: docker inspect myubuntu | grep '"IPAddress"' | head -n 1
