@@ -3,6 +3,7 @@ version: "3.8"
 #定義 service 的區塊 一個 service 可以啟動多個 courntainer
 service:
 #定義一個叫 npm 的 service
+#stdin_open 是interactive 選項
 npm:
   image: node:14-alpine
   stdin_open: true
@@ -10,3 +11,6 @@ npm:
   working_dir: /source
   volumes:
   - .:/source
+
+how to use 
+docker-compose run --rm npm npm -v  #啟動 npm 執行 npm -v 
