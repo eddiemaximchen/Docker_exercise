@@ -14,3 +14,4 @@ npm:
 
 how to use 
 docker-compose run --rm npm npm -v  #啟動 npm（有點像select case 寫誰就執行那個 case) 執行 npm -v 
+docker-compose up # 一次執行所有 case
