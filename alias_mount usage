@@ -1,0 +1,4 @@
+# this is a bash command use alias to shorten command like I do in open conda
+alias npm="docker run -it --rm -v \"$PWD:/source -w /source node:14-alpine npm"
+# because 
+npm -v # because there is no real npm in the real environment there is you can use npm as a alias
