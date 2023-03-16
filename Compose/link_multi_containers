@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  database:
+    image:percona
+    environment:
+      MY_ROOT_PASSWORD:pass
+      MYSQL_DATABASE:some
+ 
+  phpmyadmin:
+    image:phpmyadmin
+    ports:
+      - 8080:80
+    linkds:
+      -database:db
+    
+#前景執行 中斷時 會停止所有 container
+docker-compose up 
+
+#背景執行
+docker-compose up -d
+
+#查看log
+docker-compose logs -f
