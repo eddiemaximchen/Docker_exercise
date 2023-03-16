@@ -1,3 +1,4 @@
 docker run --rm -it --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes -e MYSQL_USER=miles -e MYSQL_DATABASE=some percona
 # 操縱環境變數時  前面要加 -e
 # 增加一個資料庫 some
+docker container run -it --link db percona mysql -hdb -uroot -ppass # -u 表user -p 表 password
