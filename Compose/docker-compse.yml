@@ -1,0 +1,12 @@
+#使用3.8 版的設定檔
+version: "3.8"
+#定義 service 的區塊 一個 service 可以啟動多個 courntainer
+service:
+#定義一個叫 npm 的 service
+npm:
+  image: node:14-alpine
+  stdin_open: true
+  tty: true
+  working_dir: /source
+  volumes:
+  - .:/source
