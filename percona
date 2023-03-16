@@ -1,0 +1,11 @@
+關於Percona Server這邊簡單的介紹一下 :
+1.屬於 Mysql 分支 (目前主流分支主要分為->Oracle官方版本的MySQL、Percona Server、MariaDB )。
+2.免費、完全兼容、增強、開源的MYSQL數據庫替代品。
+3.包括許多只在MYSQL商業企業版中可用的(擴展性、可用性、安全性和備份功能)。
+4.優化、增強現有數據庫軟件，滿足大多數據庫應用程序工作負載需求。
+
+Terminal 1:docker run --rm -it --name db -e MYSQL_ROOT_PASSWORD=pass -e MYSQL_DATABASE=some percona 
+Terminal 2:docker run --rm -it --link db percona mysql -hdb -uroot -ppass
+
+# build a database named some in percona 但是percona會呈現pause狀態 無法操作 無法退出
+所以另開一個percona link db 看剛才見的some
