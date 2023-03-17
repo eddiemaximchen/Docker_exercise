@@ -1,3 +1,6 @@
 docker container run -d --name t3 --volume-from todo1 diamol/ch06-todo-list
 
 #--volume-from  此語法讓t3共用之前 todo1 創造的 volume
+
+docker do not have transcation lock function. it would be run if both app write the same file on the volume
+# best case scenario is used to backed data
