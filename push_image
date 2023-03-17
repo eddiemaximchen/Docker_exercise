@@ -1,0 +1,5 @@
+Terminal:export dockerId="ID"
+Terminal:docker login --username $dockerId
+#give your image a tag
+docker image tag testemp $dockerId/testemp:v1
+docker image push $dockerId/testemp:v1
