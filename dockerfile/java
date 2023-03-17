@@ -1,0 +1,6 @@
+FROM openjdk:8
+WORKDIR /jar
+COPY TestEmployee.jar .
+CMD ["java -jar", "jar/TestEmployee.jar"]
+
+# the script do the same thing like below docker command
