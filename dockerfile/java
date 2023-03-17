@@ -3,4 +3,9 @@ WORKDIR /jar
 COPY TestEmployee.jar .
 CMD ["java -jar", "jar/TestEmployee.jar"]
 
-# the script do the same thing like below docker command
+# the script do the same thing like below docker command the difference is FROM can not use local image
+Terminal1:docker container run -i -t --name java_test openjdk:8
+Terminal2:docker container cp TestEmployee.jar java_test:/root
+Terminal2:docker container exec -it java_test /bin/bash
+Terminal2:cd
+Terminal2:java -jar TestEmployee.jar
