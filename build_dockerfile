@@ -1,0 +1,4 @@
+docker image --tag web-ping .
+
+# --tag give this image a name
+# . build the current dir
