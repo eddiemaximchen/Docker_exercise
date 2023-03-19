@@ -7,3 +7,5 @@ change index.html
 <img src='https://user-images.githubusercontent.com/122704850/225817445-c7edcd01-a88c-4ec9-bfc6-de94dbd278f7.png'>
 push image to docker hub
 <img src='https://user-images.githubusercontent.com/122704850/225820220-11554f63-5c95-42fe-8336-13ef35347844.png'>
+use docker to deploy a single mode hadoop
+<img src='https://user-images.githubusercontent.com/122704850/226149140-d814b1ae-1905-46dc-8cc9-15f3912adb12.png'>
