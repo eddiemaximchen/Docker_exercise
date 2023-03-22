@@ -1,0 +1,2 @@
+run apt-get update && apt-get install -y openssh-server &&systemctl enable ssh --now 
+install openssh 時
