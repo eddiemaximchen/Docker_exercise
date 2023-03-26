@@ -1,0 +1,24 @@
+FROM ubuntu
+WORKDIR /root
+RUN apt-get update && apt-get install -y openssh-server
+CMD ["systemctl" "enable ssh --now"] 
+RUN mkdir -p /root/.ssh && \
+    chmod 0700 /root/.ssh && \
+    ssh-keyscan github.com > /root/.ssh/known_hosts
+RUN echo "$ssh_prv_key" > /root/.ssh/id_rsa && \
+    echo "$ssh_pub_key" > /root/.ssh/id_rsa.pub && \
+    chmod 600 /root/.ssh/id_rsa && \
+    chmod 600 /root/.ssh/id_rsa.pub
+RUN apt-get update && apt-get install nano && apt-get install -y openjdk-8-jdk
+RUN mkdir bigdata
+RUN wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.4/hadoop-3.3.4.tar.gz
+RUN tar -C /root/bigdata/ -xvzf hadoop-3.3.4.tar.gz
+RUN mkdir /root/bigdata/hdfs
+RUN mkdir /root/bigdata/hdfs/datanode
+RUN mkdir /root/bigdata/hdfs/namenode
+COPY /hadoop_config/* /root/bigdata/hadoop-3.3.4/etc/hadoop
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ENV HADOOP_HOME=/root/bigdata/hadoop-3.3.4
+ENV HADOOP_USER_NAME=hadoop
+ENV PATH=$PATH:$HADOOP_HOME/bin:HADOOP_HOME/sbin:$JAVA_HOME/bin
+
