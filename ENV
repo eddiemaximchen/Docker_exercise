@@ -1,0 +1,1 @@
+在dockerfile ENV key=value 用來建置path, java_home等變數
