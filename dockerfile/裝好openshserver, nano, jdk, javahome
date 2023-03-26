@@ -3,4 +3,4 @@ run apt-get update && apt-get install -y openssh-server
 cmd ["systemctl" "enable ssh --now"] 
 run apt-get update && apt-get install nano && apt-get install -y openjdk-8-jdk
 cmd ["export", "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64"]
-cmd ["export", "PATH=$PATH:$JAVA_HOME/bin]
+cmd ["export", "PATH=$PATH:$JAVA_HOME/bin"]
