@@ -17,7 +17,7 @@ RUN mkdir /root/bigdata/hdfs
 RUN mkdir /root/bigdata/hdfs/datanode
 RUN mkdir /root/bigdata/hdfs/namenode
 COPY /hadoop_config/* /root/bigdata/hadoop-3.3.4/etc/hadoop
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ENV HADOOP_HOME=/root/bigdata/hadoop-3.3.4
 ENV HADOOP_USER_NAME=hadoop
 ENV PATH=$PATH:$HADOOP_HOME/bin:HADOOP_HOME/sbin:$JAVA_HOME/bin
