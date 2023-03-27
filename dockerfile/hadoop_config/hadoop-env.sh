@@ -425,7 +425,10 @@ export HADOOP_OS_TYPE=${HADOOP_OS_TYPE:-$(uname -s)}
 # export HADOOP_REGISTRYDNS_SECURE_USER=yarn
 
 # Supplemental options for privileged registry DNS
-# By default, Hadoop uses jsvc which needs to know to launch a
+# By default, Hadoop uses jsvc which needs to know to launch aexport JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+432
+
 # server jvm.
 # export HADOOP_REGISTRYDNS_SECURE_EXTRA_OPTS="-jvm server"
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+export HADOOP_HOME=/root/bigdata/hadoop-3.3.4
