@@ -1,0 +1,18 @@
+docker image inspect image_name
+
+
+"RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:7948c3e5790c6df89fe48041fabd8f1c576d4bb7c869183e03b9e3873a5f33d9",
+                "sha256:741e7e800bd293aae175e895132ed848d46df85b916ebf8a865bee6159768bf0",
+                "sha256:0cea6de9ca6ac19e11c6b3c72626fae4fca7c78d27cf8af18a5b75f4c3e0a40f",
+                "sha256:de45ff580c1bc685f9095fea3d1d3399000baacfdd5e1f32df295e2a2fa44dd3",
+                "sha256:64d4b7ea9276ae88808cfd346eda051a970567243f4a065744dafb9c34e80c03",
+                "sha256:a220e6d26d922c1368c0aef0352cad4a4dadc64a0aa5d49ac7ca32163ac7586d",
+                "sha256:2b82fd91b6def16e5426faf20cb48d0c44a0cb58a3a070dc502a2dd935adfd61",
+                "sha256:67b26aeeaafd1c22de4918a43244b4513aa84df66839558351f6e4bd580a5595",
+                "sha256:8519ee72dcbe9923251273ecda5da9315b6ea3ede1aaf422ed0b866457ee20d4",
+                "sha256:ca33da1bf6035262d5363df55559d0e7a2d2530ccd36c65e283a4882170ea9ec"
+            ]
+        },
