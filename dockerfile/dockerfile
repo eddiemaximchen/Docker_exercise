@@ -20,4 +20,4 @@ EXPOSE 22
 CMD [ "sh", "/etc/init.d/ssh", "start"]
 RUN bigdata/hadoop-3.3.4/bin/hdfs namenode -format
 RUN bigdata/hadoop-3.3.4/sbin/start-dfs.sh
-ENTRYPOINT service ssh restart && bash
+ENTRYPOINT service ssh restart && bash 
