@@ -1,1 +1,2 @@
 docker volume create --name code
+給 container 用的資料夾 不會隨著 container消失而消失
