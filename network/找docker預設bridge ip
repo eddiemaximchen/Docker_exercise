@@ -1,0 +1,1 @@
+docker network inspect bridge -f'{{(index .IPAM.Config 0).Gateway}}'
