@@ -1,0 +1,3 @@
+RUN mkdir -p movie/templates
+COPY minimalapp/* /root/movie  #不會保持目錄結構
+COPY minimalapp/ /root/movie   #去掉＊
